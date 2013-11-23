@@ -1,4 +1,4 @@
-rails_root = ENV["RAILS_ROOT"]
+rails_root = ENV["ROOT_EDUCAPSULE"]
 
 worker_processes 4
 
