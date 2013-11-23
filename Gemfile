@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.1'
 
-gem 'pg'
+gem 'pg', '0.17.0'
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
@@ -20,5 +20,5 @@ group :doc do
   gem 'sdoc'
 end
 
-gem 'unicorn'
+gem 'unicorn', '~> 4.7.0'
 gem 'capistrano', '~> 3.0.1', group: :development
