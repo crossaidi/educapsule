@@ -2,16 +2,16 @@ rails_root = ENV["ROOT_EDUCAPSULE"]
 
 worker_processes 4
 
-working_directory rails_root # available in 0.94.0+
+working_directory rails_root + '/current'
 
-listen "/tmp/.unicorn.sock", :backlog => 64
+listen rails_root + "/shared/tmp/sockets/.unicorn.sock", :backlog => 64
 
 timeout 30
 
-pid rails_root + "/tmp/pids/unicorn.pid"
+pid rails_root + "/shared/tmp/pids/unicorn.pid"
 
-stderr_path rails_root + "/log/unicorn.stderr.log"
-stdout_path rails_root + "/log/unicorn.stdout.log"
+stderr_path rails_root + "/shared/log/unicorn.stderr.log"
+stdout_path rails_root + "/shared/log/unicorn.stdout.log"
 
 preload_app true
 GC.respond_to?(:copy_on_write_friendly=) and
