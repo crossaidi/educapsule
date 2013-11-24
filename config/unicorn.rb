@@ -4,11 +4,11 @@ worker_processes 4
 
 working_directory rails_root + '/current'
 
-listen rails_root + "/shared/tmp/sockets/.unicorn.sock", :backlog => 64
+listen rails_root + "/current/tmp/sockets/.unicorn.sock", :backlog => 64
 
 timeout 30
 
-pid rails_root + "/shared/tmp/pids/unicorn.pid"
+pid rails_root + "/current/tmp/pids/unicorn.pid"
 
 stderr_path rails_root + "/shared/log/unicorn.stderr.log"
 stdout_path rails_root + "/shared/log/unicorn.stdout.log"
