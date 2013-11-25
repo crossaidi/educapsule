@@ -2,10 +2,10 @@ application = "educapsule"
 deploy_to  = "/home/cross/#{application}"
 
 rails_root = "#{deploy_to}/current"
-socket_file = "/tmp/#{application}/sockets/.unicorn.sock"
-pid_file = "/tmp/#{application}/pids/unicorn.pid"
-error_log_file = "/tmp/#{application}/log/unicorn.stderr.log"
-output_log_file = "/tmp/#{application}/log/unicorn.stdout.log"
+socket_file = "#{deploy_to}/shared/sockets/.unicorn.sock"
+pid_file = "#{deploy_to}/shared/pids/unicorn.pid"
+error_log_file = "#{rails_root}/log/unicorn.stderr.log"
+output_log_file = "#{rails_root}/log/unicorn.stdout.log"
 old_pid    = "#{pid_file}.oldbin"
 
 working_directory rails_root
