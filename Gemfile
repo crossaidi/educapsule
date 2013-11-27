@@ -52,9 +52,10 @@ group :development do
 
   gem 'guard'
   gem 'guard-rails'
-  gem 'guard-zeus'
+  gem 'guard-bundler'
   gem 'guard-rspec'
   gem 'guard-annotate'
+  gem 'zeus', '~> 0.13.4.pre2'
 
   # Deployment
 
