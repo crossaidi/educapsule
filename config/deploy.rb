@@ -4,10 +4,10 @@ set :branch, 'master'
 
 set :scm, :git
 
-set :bundle_gemfile, -> { release_path.join('Gemfile') }
-
 set :linked_dirs, %w{bin tmp/pids tmp/cache tmp/sockets vendor/bundle}
 #set :linked_files, %w{config/database.yml.sample}
+
+set :bundle_dir, -> { shared_path.join('vendor/bundle') }
 
 set :keep_releases, 5
 

@@ -38,6 +38,7 @@ group :development do
   # Testing
 
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'cucumber'
   gem 'shoulda'
   gem 'capybara'
 
