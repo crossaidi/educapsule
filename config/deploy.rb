@@ -4,10 +4,11 @@ set :branch, 'master'
 
 set :scm, :git
 
-set :linked_dirs, %w{bin tmp/pids tmp/cache tmp/sockets vendor/bundle}
+#set :linked_dirs, %w{bin tmp/pids tmp/cache tmp/sockets vendor/bundle}
 #set :linked_files, %w{config/database.yml.sample}
 
-set :bundle_dir, -> { shared_path.join('vendor/bundle') }
+set :bundle_binstubs, -> { release_path.join('bin') }
+set :bundle_dir, -> { release_path.join('vendor/bundle') }
 
 set :keep_releases, 5
 
