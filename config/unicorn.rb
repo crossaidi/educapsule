@@ -1,9 +1,4 @@
-application = 'educapsule'
-
-user = ENV['EDUCAPSULE_PROD_USER']
-
-deploy_to  = "/home/#{user}/#{application}"
-
+deploy_to  = ENV['EDUCAPSULE_ROOT']
 rails_root = "#{deploy_to}/current"
 socket_file = "#{deploy_to}/shared/tmp/sockets/.unicorn.sock"
 pid_file = "#{deploy_to}/shared/tmp/pids/unicorn.pid"
