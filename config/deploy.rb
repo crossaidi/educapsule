@@ -1,5 +1,3 @@
-require 'capistrano/bundler'
-
 set :application, 'educapsule'
 set :repo_url, 'git@github.com:crossaidi/educapsule.git'
 set :branch, 'master'
@@ -23,7 +21,7 @@ namespace :deploy do
       else
         execute :rm, "#{shared_path}/config/database.yml" if test("[ -e #{shared_path}/config/database.yml ]")
       end
-      upload!("#{ENV['ROOT_EDUCAPSULE']}/config/database_production.yml", "#{shared_path}/config/database.yml")
+      upload!("config/database_production.yml", "#{shared_path}/config/database.yml")
     end
   end
 
