@@ -5,8 +5,8 @@ user = ENV['EDUCAPSULE_PROD_USER']
 deploy_to  = "/home/#{user}/#{application}"
 
 rails_root = "#{deploy_to}/current"
-socket_file = "#{deploy_to}/shared/sockets/.unicorn.sock"
-pid_file = "#{deploy_to}/shared/pids/unicorn.pid"
+socket_file = "#{deploy_to}/shared/tmp/sockets/.unicorn.sock"
+pid_file = "#{deploy_to}/shared/tmp/pids/unicorn.pid"
 error_log_file = "#{rails_root}/log/unicorn.stderr.log"
 output_log_file = "#{rails_root}/log/unicorn.stdout.log"
 

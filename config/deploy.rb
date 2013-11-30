@@ -7,7 +7,7 @@ set :scm, :git
 set :linked_dirs, %w{bin tmp/pids tmp/cache tmp/sockets vendor/bundle}
 set :linked_files, %w{config/database.yml}
 
-set :keep_releases, 5
+set :keep_releases, 1
 
 before 'deploy:check:linked_dirs', 'deploy:configs_upload'
 
