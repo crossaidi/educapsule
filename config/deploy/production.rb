@@ -8,4 +8,6 @@ server fetch(:host), port: fetch(:port), user: fetch(:user), roles: %w{web app d
 
 set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
 
+set :rvm_type, :user
+set :bundle_flags, '--deployment'
 set :bundle_without, %w{development test}.join(' ')

@@ -2,7 +2,7 @@ require 'capistrano/setup'
 require 'capistrano/deploy'
 require 'capistrano/console'
 
-require 'rvm/capistrano'
+require 'capistrano/rvm'
 require 'capistrano/rails'
 require 'capistrano/bundler'
 

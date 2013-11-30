@@ -56,14 +56,16 @@ group :development do
   gem 'guard-bundler'
   gem 'guard-rspec'
   gem 'guard-annotate'
+  gem 'guard-rubocop'
   gem 'zeus', '~> 0.13.4.pre2'
 
   # Deployment
 
   gem 'capistrano', '~> 3.0.1'
-  gem 'rvm-capistrano'
+  gem 'capistrano-rvm', '~> 0.1.0'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
+  gem 'capistrano-unicorn', require: false
 
   # Other dev stuff
 

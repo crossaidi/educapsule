@@ -1,4 +1,4 @@
-application = "educapsule"
+application = 'educapsule'
 
 user = ENV['EDUCAPSULE_PROD_USER']
 
@@ -10,7 +10,7 @@ pid_file = "#{deploy_to}/shared/pids/unicorn.pid"
 error_log_file = "#{rails_root}/log/unicorn.stderr.log"
 output_log_file = "#{rails_root}/log/unicorn.stdout.log"
 
-listen socket_file, :backlog => 64
+listen socket_file, backlog: 64
 
 pid pid_file
 stderr_path error_log_file

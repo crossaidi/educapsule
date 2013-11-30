@@ -4,7 +4,7 @@ pid_file = "#{rails_root}/tmp/pids/unicorn.pid"
 error_log_file = "#{rails_root}/log/unicorn.stderr.log"
 output_log_file = "#{rails_root}/log/unicorn.stdout.log"
 
-listen socket_file, :backlog => 64
+listen socket_file, backlog: 64
 listen '8888'
 
 pid pid_file
