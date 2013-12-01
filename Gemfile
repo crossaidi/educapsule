@@ -65,7 +65,6 @@ group :development do
   gem 'capistrano-rvm', '~> 0.1.0'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
-  gem 'capistrano-unicorn', require: false
 
   # Other dev stuff
 

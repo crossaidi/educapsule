@@ -9,6 +9,9 @@ set :linked_files, %w{config/database.yml}
 
 set :keep_releases, 1
 
+set :unicorn_conf, "#{shared_path}/config/unicorn.rb"
+set :unicorn_pid, "#{shared_path}/tmp/pids/unicorn.pid"
+
 before 'deploy:check:linked_dirs', 'deploy:configs_upload'
 
 namespace :deploy do
