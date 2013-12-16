@@ -16,7 +16,7 @@ before 'deploy:check:linked_dirs', 'deploy:configs_upload'
 
 namespace :deploy do
 
-  desc 'Uploading config files to the server from local host'
+  desc 'Uploading config files to the server from localhost'
   task :configs_upload do
     on roles(:all), stages: :production do
       unless test("[ -e #{shared_path}/config/ ]")

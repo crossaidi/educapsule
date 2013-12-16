@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Framework
 
-gem 'rails', '4.0.1'
+gem 'rails', '4.0.2'
 
 # Server
 
@@ -15,22 +15,22 @@ gem 'pg', '0.17.0'
 # Styles & Templates
 
 gem 'sass-rails', '~> 4.0.0'
-gem 'zurb-foundation', '~> 4.3.2'
+gem 'foundation-rails', '~> 5.0.2.0'
 gem 'compass', '~> 0.12.2'
-gem 'haml'
+gem 'haml', '~> 4.0.4'
+gem 'haml-rails', '~> 0.5.2'
 
 # JavaScript
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 3.0.4'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'turbolinks'
-gem 'jbuilder', '~> 1.2'
+gem 'turbolinks', '~> 2.0.0'
 
 # IDE Support
 
 group :doc do
-  gem 'sdoc'
+  gem 'sdoc', '~> 0.3.20'
 end
 
 group :development do
@@ -38,37 +38,36 @@ group :development do
   # Testing
 
   gem 'rspec-rails', '~> 3.0.0.beta'
-  gem 'cucumber'
-  gem 'shoulda'
-  gem 'capybara'
+  gem 'cucumber', '~> 1.3.10'
+  gem 'shoulda', '~> 3.5.0'
+  gem 'capybara', '~> 2.2.0'
 
-  # Persistence operations
+  #db testing
 
-  gem 'faker'
-  gem 'factory_girl_rails'
-  gem 'database_cleaner'
-  gem 'annotate'
+  gem 'faker', '~> 1.2.0'
+  gem 'factory_girl_rails', '~> 4.3.0'
+  gem 'database_cleaner', '~> 1.2.0'
+  gem 'annotate', '~> 2.6.0'
 
   # Development automatic
 
-  gem 'guard'
-  gem 'guard-rails'
-  gem 'guard-bundler'
-  gem 'guard-rspec'
-  gem 'guard-annotate'
-  gem 'guard-rubocop'
-  gem 'zeus', '~> 0.13.4.pre2'
+  gem 'guard', '~> 2.2.5'
+  gem 'guard-rails', '~> 0.4.7'
+  gem 'guard-bundler', '~> 2.0.0'
+  gem 'guard-rspec', '~> 1.2.1'
+  gem 'guard-annotate', '~> 1.1.0'
+  gem 'guard-rubocop', '~> 1.0.1'
 
   # Deployment
 
   gem 'capistrano', '~> 3.0.1'
   gem 'capistrano-rvm', '~> 0.1.0'
-  gem 'capistrano-rails'
-  gem 'capistrano-bundler'
+  gem 'capistrano-rails', '~> 1.1.0'
+  gem 'capistrano-bundler', '~> 1.1.1'
 
   # Other dev stuff
 
-  gem 'debugger'
-  gem 'rubocop'
-  gem 'pry'
+  gem 'debugger', '~> 1.6.3'
+  gem 'rubocop', '~> 0.15.0'
+  gem 'pry', '~> 0.9.12.4'
 end
