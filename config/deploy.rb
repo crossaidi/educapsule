@@ -44,7 +44,9 @@ namespace :deploy do
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
-
+      within shared_path do
+        execute :rm, "-r tmp/cache/*"
+      end
     end
   end
 
