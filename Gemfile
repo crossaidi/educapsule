@@ -46,8 +46,8 @@ group :development do
 
   gem 'faker', '~> 1.2.0'
   gem 'factory_girl_rails', '~> 4.3.0'
-  gem 'database_cleaner', '~> 1.2.0'
-  gem 'annotate', '~> 2.6.0'
+  gem 'database_cleaner'
+  gem 'annotate'
 
   # Development automatic
 
@@ -55,8 +55,8 @@ group :development do
   gem 'guard-rails', '~> 0.4.7'
   gem 'guard-bundler', '~> 2.0.0'
   gem 'guard-rspec', '~> 1.2.1'
-  gem 'guard-annotate', '~> 1.1.0'
-  gem 'guard-rubocop', '~> 1.0.1'
+  gem 'guard-annotate'
+  gem 'guard-rubocop'
 
   # Deployment
 
@@ -67,7 +67,6 @@ group :development do
 
   # Other dev stuff
 
-  gem 'debugger', '~> 1.6.3'
-  gem 'rubocop', '~> 0.15.0'
-  gem 'pry', '~> 0.9.12.4'
+  gem 'rubocop'
+  gem 'pry'
 end
