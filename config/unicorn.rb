@@ -7,7 +7,6 @@ error_log_file = "#{rails_root}/log/unicorn.stderr.log"
 output_log_file = "#{rails_root}/log/unicorn.stdout.log"
 
 listen socket_file, backlog: 64
-listen 8000
 
 pid pid_file
 stderr_path error_log_file
