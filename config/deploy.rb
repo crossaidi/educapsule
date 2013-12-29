@@ -9,10 +9,9 @@ set :scm, :git
 set :linked_dirs, %w{bin tmp/pids tmp/cache tmp/sockets vendor/bundle}
 set :linked_files, %w{config/database.yml}
 
-set :keep_releases, 1
+set :keep_releases, 5
 
 set :unicorn_pid, -> {"#{shared_path}/tmp/pids/unicorn.pid"}
-set :bundle_bins, fetch(:bundle_bins, []).push('unicorn')
 
 before 'deploy:check:linked_dirs', 'deploy:configs_upload'
 
@@ -23,9 +22,9 @@ namespace :deploy do
       unless test("[ -e #{shared_path}/config/ ]")
         execute :mkdir, "#{shared_path}/config"
       else
-        execute :rm, "#{shared_path}/config/database.yml" if test("[ -e #{shared_path}/config/database.yml ]")
+        execute :rm, "#{shared_path}/config/*" if test("[ -e #{shared_path}/config/* ]")
       end
-      upload!("config/database_production.yml", "#{shared_path}/config/database.yml")
+      upload!('config/database_production.yml', "#{shared_path}/config/database.yml")
     end
   end
 
@@ -45,7 +44,7 @@ namespace :deploy do
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       within shared_path do
-        execute :rm, "-r tmp/cache/*"
+        execute :rm, '-r tmp/cache/*' if test('[ -e tmp/cache/* ]')
       end
     end
   end

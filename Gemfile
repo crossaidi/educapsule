@@ -46,6 +46,7 @@ group :development do
 
   gem 'faker', '~> 1.2.0'
   gem 'factory_girl_rails', '~> 4.3.0'
+  gem 'minitest', '5.2.0'
   gem 'database_cleaner'
   gem 'annotate'
 
