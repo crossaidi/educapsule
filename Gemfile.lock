@@ -278,6 +278,7 @@ DEPENDENCIES
   haml (~> 4.0.4)
   haml-rails (~> 0.5.2)
   jquery-rails (~> 3.0.4)
+  minitest (= 4.7.5)
   pg (= 0.17.0)
   pry
   rails (= 4.0.2)
