@@ -15,7 +15,6 @@ gem 'pg', '0.17.0'
 # Styles & Templates
 
 gem 'sass-rails', '~> 4.0.0'
-gem 'foundation-rails', '~> 5.0.2.0'
 gem 'compass', '~> 0.12.2'
 gem 'haml', '~> 4.0.4'
 gem 'haml-rails', '~> 0.5.2'
@@ -38,7 +37,6 @@ group :development do
   # Testing
 
   gem 'rspec-rails', '~> 3.0.0.beta'
-  gem 'minitest', '4.7.5'
   gem 'cucumber', '~> 1.3.10'
   gem 'shoulda', '~> 3.5.0'
   gem 'capybara', '~> 2.2.0'
@@ -52,6 +50,7 @@ group :development do
 
   # Development automatic
 
+  gem 'bower-rails', '~> 0.6.1'
   gem 'guard', '~> 2.2.5'
   gem 'guard-rails', '~> 0.4.7'
   gem 'guard-bundler', '~> 2.0.0'
