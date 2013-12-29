@@ -37,6 +37,7 @@ group :development do
 
   # Testing
 
+  gem 'minitest'
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'cucumber', '~> 1.3.10'
   gem 'shoulda', '~> 3.5.0'
