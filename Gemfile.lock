@@ -117,9 +117,6 @@ GEM
       railties (>= 4.0.1)
     hike (1.2.3)
     i18n (0.6.9)
-    jquery-rails (3.0.4)
-      railties (>= 3.0, < 5.0)
-      thor (>= 0.14, < 2.0)
     json (1.8.1)
     kgio (2.8.1)
     listen (2.4.0)
@@ -145,6 +142,7 @@ GEM
       ast (~> 1.1)
       slop (~> 3.4, >= 3.4.5)
     pg (0.17.0)
+    polyglot (0.3.3)
     polyglot (0.3.3)
     powerpack (0.0.9)
     pry (0.9.12.4)
@@ -275,7 +273,6 @@ DEPENDENCIES
   guard-rubocop
   haml (~> 4.0.4)
   haml-rails (~> 0.5.2)
-  jquery-rails (~> 3.0.4)
   pg (= 0.17.0)
   pry
   rails (= 4.0.2)
