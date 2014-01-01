@@ -1,7 +1,0 @@
-{
-  "name": "dsl-generated dependencies",
-  "dependencies": {
-    "jquery": "latest",
-    "foundation": "latest"
-  }
-}

@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 # Framework
 
@@ -11,6 +12,11 @@ gem 'unicorn', '~> 4.7.0'
 # DB
 
 gem 'pg', '0.17.0'
+
+# Rails-assets
+
+gem 'rails-assets-jquery'
+gem 'rails-assets-foundation', '5.0.2'
 
 # Styles & Templates
 
@@ -49,7 +55,6 @@ group :development do
 
   # Development automatic
 
-  gem 'bower-rails', '~> 0.6.1'
   gem 'guard', '~> 2.2.5'
   gem 'guard-rails', '~> 0.4.7'
   gem 'guard-bundler', '~> 2.0.0'
