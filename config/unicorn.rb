@@ -22,7 +22,7 @@ GC.respond_to?(:copy_on_write_friendly=) and GC.copy_on_write_friendly = true
 before_fork do |server, worker|
   defined?(ActiveRecord::Base) and
       ActiveRecord::Base.connection.disconnect!
-      Process.kill("QUIT", File.read(old_pid).to_i) if File.exists?(old_pid) && server.pid != old_pid
+      #Process.kill("QUIT", File.read(old_pid).to_i) if File.exists?(old_pid) && server.pid != old_pid
 end
 
 after_fork do |server, worker|
