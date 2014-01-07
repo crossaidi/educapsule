@@ -55,6 +55,7 @@ group :development do
 
   # Development automatic
 
+  gem 'foreman', '~> 0.63.0'
   gem 'guard', '~> 2.2.5'
   gem 'guard-rails', '~> 0.4.7'
   gem 'guard-bundler', '~> 2.0.0'
