@@ -1,6 +1,7 @@
 rails_root = ENV['EDUCAPSULE_ROOT_LOCAL']
 socket_file = "#{rails_root}/tmp/sockets/.unicorn.sock"
 pid_file = "#{rails_root}/tmp/pids/unicorn.pid"
+old_pid    = pid_file + '.oldbin'
 error_log_file = "#{rails_root}/log/unicorn.stderr.log"
 output_log_file = "#{rails_root}/log/unicorn.stdout.log"
 
@@ -21,6 +22,14 @@ GC.respond_to?(:copy_on_write_friendly=) and GC.copy_on_write_friendly = true
 before_fork do |server, worker|
   defined?(ActiveRecord::Base) and
       ActiveRecord::Base.connection.disconnect!
+
+  if File.exists?(old_pid) && server.pid != old_pid
+    begin
+      Process.kill("QUIT", File.read(old_pid).to_i)
+    rescue Errno::ENOENT, Errno::ESRCH
+      # someone else did our job for us
+    end
+  end
 end
 
 after_fork do |server, worker|
