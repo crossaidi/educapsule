@@ -23,6 +23,7 @@ gem 'rails-assets-foundation', '5.0.2'
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'compass', '~> 0.12.2'
+gem 'compass-rails'
 gem 'haml', '~> 4.0.4'
 gem 'haml-rails', '~> 0.5.2'
 
