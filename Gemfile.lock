@@ -32,6 +32,8 @@ GEM
     arel (4.0.1)
     ast (1.1.0)
     atomic (1.1.14)
+    autoprefixer-rails (1.0.20140110)
+      execjs
     builder (3.1.4)
     capistrano (3.0.1)
       i18n
@@ -154,6 +156,8 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
+    pry-rails (0.3.2)
+      pry (>= 0.9.10)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -263,6 +267,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  autoprefixer-rails
   capistrano (~> 3.0.1)
   capistrano-bundler (~> 1.1.1)
   capistrano-rails (~> 1.1.0)
@@ -285,7 +290,7 @@ DEPENDENCIES
   haml (~> 4.0.4)
   haml-rails (~> 0.5.2)
   pg (= 0.17.0)
-  pry
+  pry-rails
   rails (= 4.0.2)
   rails-assets-foundation (= 5.0.2)
   rails-assets-jquery
