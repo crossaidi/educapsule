@@ -1,8 +1,12 @@
 .bubblingG {
+    top: 40%;
+    left: 40%;
     text-align: center;
     width:200px;
     height:125px;
+    position: absolute;
     display: none;
+
 }
 
 .bubblingG span {

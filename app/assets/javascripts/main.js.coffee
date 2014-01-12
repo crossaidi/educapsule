@@ -1,5 +1,8 @@
 $(document).on 'page:fetch', ->
-  $('.bubblingG').show
+  $('.content-wrapper').hide()
+  $('.bubblingG').show()
+  debugger
 
 $(document).on 'page:receive', ->
-  $('.bubblingG').hide
+  $('.bubblingG').hide()
+  $('.content-wrapper').show()
