@@ -2,14 +2,23 @@
 %html
   %head
   %title Educapsule
+  = favicon_link_tag
   = stylesheet_link_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
   %body
     %section{class: 'main'}
       .right-panel
         %h1{class: 'app-title'}
-          %a{href: '#'}
-            EDUCAPSULE
+          = link_to 'EDUCAPSULE', root_path
+        %nav
+          %ul
+            %li
+              = link_to 'HOME', root_path
+            %li
+              = link_to 'ABOUT', about_path
 
+      %header
+      .content
+        = yield
 
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
