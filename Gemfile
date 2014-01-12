@@ -27,6 +27,7 @@ gem 'compass-rails'
 gem 'haml', '~> 4.0.4'
 gem 'haml-rails', '~> 0.5.2'
 gem 'autoprefixer-rails'
+gem 'rails-sass-images'
 
 # JavaScript
 
