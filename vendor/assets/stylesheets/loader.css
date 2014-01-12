@@ -1,0 +1,47 @@
+.bubblingG {
+    text-align: center;
+    width:200px;
+    height:125px;
+    display: none;
+}
+
+.bubblingG span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin: 63px auto;
+    background: #28F2F2;
+    border-radius: 125px;
+    animation: bubblingG 0.6s infinite alternate;
+}
+
+#bubblingG_1 {
+    animation-delay: 0s;
+}
+
+#bubblingG_2 {
+    animation-delay: 0.18s;
+}
+
+#bubblingG_3 {
+    animation-delay: 0.36s;
+}
+
+@keyframes bubblingG {
+    0% {
+        width: 25px;
+        height: 25px;
+        background-color:#28F2F2;
+        transform: translateY(0);
+    }
+
+    100% {
+        width: 60px;
+        height: 60px;
+        background-color:#FFFFFF;
+        transform: translateY(-53px);
+    }
+
+}
+
